@@ -1,8 +1,8 @@
-import seaborn as sns
 import matplotlib.pyplot as plt
+import seaborn as sns
+import pandas as pd
 import numpy as np
 import numba
-import pandas as pd
 
 @numba.njit
 def betting(principal, f):
@@ -53,3 +53,5 @@ if __name__ == "__main__":
     plt.title("Average Log Growth Rate vs. Betting Fraction")
     plt.savefig("growth_rates.png", dpi=300, bbox_inches="tight")
     plt.show()
+
+
